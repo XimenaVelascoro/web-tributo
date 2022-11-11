@@ -1,3 +1,162 @@
-h1{
-    color: brown;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(226, 179, 241,0.8);
+    
+  }
+  
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  
+header{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+  }
+  
+nav a{
+    display: inline-block;
+    color: black;
+    margin: 20 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+  }
+  
+nav a:hover{
+    background-color: rgb(157, 105, 244,0.8);
+    color: whitesmoke;
+  }
+  
+.menu {
+    display: flex;
+    align-items: center;
+  }
+.menu a{
+    margin-right: 1.5rem;
+    text-decoration:none;
+  }
+  
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+img{
+    width: 100%;
 }
+  
+.galery{
+    display:flex;
+    padding:5px;
+    margin: 5px;
+  
+  }
+  
+.column{
+    flex:25%;
+    padding:3px;
+  }
+  
+  
+  
+  
+.container{
+    display: flex;
+    max-width: 100%;
+  }
+  
+.card{
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(89, 90, 241,0.4);
+    transform: translateY(-2%);
+  }
+  
+.card .contenido{
+    padding: 5px;
+    text-align: auto;
+  }
+  
+.card .contenido p{
+    line-height: 1;
+    color:  #000000;
+    font-size: 20;
+  }
+  
+.card .contenido h3{
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #5c3566;
+    border: 1px solid #5c3566;
+    border-radius: 5px;
+    transition: all 400ms ease;
+  }
+  .card .contenido a:hover{
+    background: #465df0;
+    color: white;
+    
+    
+  }
+  
+  @font-face {
+    font-family: titulos;
+    src: url(font/PoiretOne-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: texto;
+    src: url(font/ShootingStar-Bold.otf);
+  }
+  
+  .text {
+     padding: 30px;
+     font-family: texto;
+  }
+  
+  .titulos{
+     padding: 20px;
+     font-family: titulos;
+  }
+  
+@media (min-width: 800px){
+
+.column{
+    flex:50%
+  }
+}
+
+
+
+@media (min-width: 600px){
+ 
+    .column{
+        flex:100%;
+  }
+}
+
